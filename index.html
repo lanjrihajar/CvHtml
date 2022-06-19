@@ -12,11 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>PageCv</title>
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar-list navbar-left">
+            </ul>
+            <div class="navbar-right">
+                <p class="d-inline m-2" data-i18n-key="language"></p>
+                <select data-i18n-switcher class="locale-switcher">
+                    <option value="fr" selected>Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
     <main class="page">
-
         <!-- début aside -->
-
         <aside class="general">
             <div class="NomEtPhoto">
                 <div class="Photo">
@@ -24,25 +36,22 @@
                 </div>
                 <div class="NometProf">
                     <h1 class="Nom">Fakih Lanjri Hajar </h1>
-                    <p class="profs"> Développeuse web et Ingenieure Civil </p>
+                    <p class="profs" data-i18n-key="webDeveloperAndCivilEngineer"></p>
                 </div>
-
             </div>
             <div class="aboutMe descrep">
-                <h2 class="tire animate__fadeInDown " > A propos de moi</h2>
-                <p class="texteabout">Doctorante en génie des matériaux de construction,Déplomée d'un titre d'ingénieure
-                    en génie civil, et maintenant je me tourne vers le développement informatique et les thématiques
-                    liées au web </p>
+                <h2 class="tire animate__fadeInDown" data-i18n-key="aboutMe"></h2>
+                <p class="texteabout" data-i18n-key="aboutText"></p>
             </div>
             <div class="aboutMe Contact">
-                <h2 class="titre animate__fadeInDown ">contact</h2>
+                <h2 class="titre animate__fadeInDown" data-i18n-key="contact"></h2>
                 <div class="info">
                     <i class="bi bi-telephone"></i>
                     <span>0666650836</span>
                 </div>
                 <div class="info">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <span>Casablanca,Maroc</span>
+                    <span data-i18n-key="address"></span>
                 </div>
                 <div class="info link">
                     <i class="bi bi-envelope-fill"></i>
@@ -64,12 +73,11 @@
                     <a target="_blank" rel="hajar" href="https://www.linkedin.com/in/hajar-fakih-lanjri-381001241/"></a>
                     <span>lanjri hajar</span>
                 </div>
-
             </div>
         </aside>
         <!-- /*fin aside*/ -->
-        <!-- dédut formation -->
 
+        <!-- dédut formation -->
         <section class="corpCv">
             <div class="prof">
                 <div class="Formation">
@@ -77,57 +85,51 @@
                         <div class="Formation-icon">
                             <i class="bi bi-book-fill"></i>
                         </div>
-                        <span class="animate__fadeInDown ">Formation</span>
+                        <span class="animate__fadeInDown" data-i18n-key="training"></span>
                     </div>
                 </div>
                 <div class="Formation-detail">
                     <div class="Doctorat">
                         <div class="formation-icon2">
                             <i class="bi bi-brush-fill"></i>
-                            <h2> Formation Développeur Full Stack</h2>
+                            <h2 data-i18n-key="training.fullStackDeveloper"></h2>
                         </div>
-                        <p> Formation de développeur <strong>Full stack</strong> à la 3WA ,avec toutes nouvelles
-                            technologies</p>
-                        <time>2022 </time>
+                        <p data-i18n-key="training.fullStackDeveloper.desc"></p>
+                        <time>2022</time>
                     </div>
-
                     <div class="Doctorat">
                         <div class="formation-icon2">
                             <i class="bi bi-brush-fill"></i>
-                            <h2>Cycle doctorat FSTT</h2>
+                            <h2 data-i18n-key="training.doctoral"></h2>
                         </div>
-                        <p>Research Team: Materials, Environment and Sustainable Development (MEDD), FSTT, Abdelmalek
-                            Essaadi University, Tetouan, Morocco.</p>
+                        <p data-i18n-key="training.doctoral.desc"></p>
                         <time>2022 - 2018</time>
                     </div>
-
                     <div class="Doctorat">
                         <div class="formation-icon2">
                             <i class="bi bi-brush-fill"></i>
-                            <h2>Cycle Master FSTT</h2>
+                            <h2 data-i18n-key="training.master2"></h2>
                         </div>
-                        <p>Master Génie civil spécialité Batiments et travaux publics</p>
+                        <p data-i18n-key="training.master2.desc"></p>
                         <time>2012 - 2009</time>
                     </div>
-
                     <div class="Doctorat">
                         <div class="formation-icon2">
                             <i class="bi bi-brush-fill"></i>
-                            <h2>Cycle Maîtrise FSTT</h2>
+                            <h2 data-i18n-key="training.master1"></h2>
                         </div>
-                        <p>Maîtrise Génie Civilspécialité Batiments et travaux publics</p>
+                        <p data-i18n-key="training.master1.desc"></p>
                         <time>2009 - 2005</time>
                     </div>
                     <div class="Doctorat">
                         <div class="formation-icon2">
                             <i class="bi bi-brush-fill"></i>
-                            <h2>Baccalauréat</h2>
+                            <h2 data-i18n-key="training.baccalaureate"></h2>
                         </div>
                         <div class="espas">
-                            <p>Bac sciences expérimentales .</p>
-                            <time> 2005</time>
+                            <p data-i18n-key="training.baccalaureate.desc"></p>
+                            <time>2005</time>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -140,64 +142,57 @@
                         <div class="Formation-icon">
                             <i class="bi bi-briefcase-fill"></i>
                         </div>
-                        <span class="animate__fadeInDown ">Expériences professionnelles</span>
+                        <span class="animate__fadeInDown" data-i18n-key="professionalExperiences"></span>
                     </div>
                 </div>
                 <div class="Doctorat">
                     <div>
                         <div class="Doctorat lpee">
                             <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                                <h2>Chef de projet</h2>
+                                <h2 data-i18n-key="professionalExperiences.pm"></h2>
                             </div>
-                            <p>chef de projet à la commun de casablanca</p>
+                            <p data-i18n-key="professionalExperiences.pm.desc"></p>
                         </div>
-                    </div>
-
-                    <div class="Doctorat lpee">
-                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                            <h2>Geotechnicienne</h2>
-                        </div>
-                        <p>ingénieure géotechnicienne chez LPEE</p>
-                    </div>
-
-                    <div class="Doctorat lpee">
-                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                            <h2> Stage à La Commune de Casablanca </h2>
-                        </div>
-                        <p>Suivi des travaux de réhabilitation des bâtiments administratifs</p>
-                    </div>
-
-                    <div class="Doctorat lpee">
-                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                            <h2> Stage à l'arrondissement Maarif</h2>
-                        </div>
-                        <p>Réalisation des travaux d'aménagement de plusieurs bâtiments administratifs</p>
-                    </div>
-
-                    <div class="Doctorat lpee">
-                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                            <h2>Stage à LPEE-Casablanca</h2>
-                        </div>
-                        <p> Etude de stabilité des terrains glissants</p>
                     </div>
                     <div class="Doctorat lpee">
                         <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                            <h2> Stage au laboratoire géotechnique LEG- Casablanca </h2>
+                            <h2 data-i18n-key="professionalExperiences.geotechnician"></h2>
                         </div>
-                        <p> Elaboration des essais géotechniques. </p>
+                        <p data-i18n-key="professionalExperiences.geotechnician.desc"></p>
+                    </div>
+                    <div class="Doctorat lpee">
+                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
+                            <h2 data-i18n-key="professionalExperiences.internship5"></h2>
+                        </div>
+                        <p data-i18n-key="professionalExperiences.internship5.desc"></p>
+                    </div>
+                    <div class="Doctorat lpee">
+                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
+                            <h2 data-i18n-key="professionalExperiences.internship4"></h2>
+                        </div>
+                        <p data-i18n-key="professionalExperiences.internship4.desc"></p>
+                    </div>
+                    <div class="Doctorat lpee">
+                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
+                            <h2 data-i18n-key="professionalExperiences.internship3"></h2>
+                        </div>
+                        <p data-i18n-key="professionalExperiences.internship3.desc"></p>
+                    </div>
+                    <div class="Doctorat lpee">
+                        <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
+                            <h2 data-i18n-key="professionalExperiences.internship2"></h2>
+                        </div>
+                        <p data-i18n-key="professionalExperiences.internship2.desc"></p>
                     </div>
                     <div class="Doctorat lpee">
                         <div class="espas">
                             <div class="formation-icon2"><i class="bi bi-bookmark-star"></i>
-                                <h2> Stage à OBTEL- Tétouan (Bureau d’études) </h2>
+                                <h2 data-i18n-key="professionalExperiences.internship1"></h2>
                             </div>
-                            <p>Etude et réalisation des plans de béton armé d’un établissement scolaire- Larache.
-                            </p>
+                            <p data-i18n-key="professionalExperiences.internship1.desc"></p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
             <hr>
             <!-- /*Competence Dev*/ -->
@@ -206,35 +201,34 @@
                     <div class="Formation-icon">
                         <i class="bi bi-binoculars"></i>
                     </div>
-                    <span class="animate__fadeInDown ">Compétences Dév</span>
+                    <span class="animate__fadeInDown" data-i18n-key="devSkills"></span>
                 </div>
                 <div class="Doctorat">
                     <span> HTML</span>
                     <div class="progress">
-                        <div class="progress-bar progress-bar1 progress-bar-striped" role="progressbar" style="width: 75%"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar1 progress-bar-striped" role="progressbar"
+                            style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span> CSS</span>
                     <div class="progress">
-                        <div class="progress-bar progress-bar1 progress-bar-striped bg-success" role="progressbar" style="width: 75%"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar1 progress-bar-striped bg-success" role="progressbar"
+                            style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span> Bootstrap</span>
                     <div class="progress">
-                        <div class="progress-bar progress-bar1 progress-bar-striped bg-info" role="progressbar" style="width: 75%"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar1 progress-bar-striped bg-info" role="progressbar"
+                            style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span> Javascript</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar2 progress-bar-striped bg-warning" role="progressbar" style="width: 50%"
-                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar  progress-bar2 progress-bar-striped bg-warning" role="progressbar"
+                            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span> React Js</span>
                     <div class="progress">
-                        <div class="progress-bar progress-bar3 progress-bar-striped bg-warning" role="progressbar" style="width:50%"
-                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar3 progress-bar-striped bg-warning" role="progressbar"
+                            style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-
                 </div>
             </div>
             <hr>
@@ -243,30 +237,19 @@
                     <div class="Formation-icon">
                         <i class="bi bi-translate"></i>
                     </div>
-                    <span class="animate__fadeInDown ">Connaissances linguistiques </span>
+                    <span class="animate__fadeInDown" data-i18n-key="languageSkills"></span>
                 </div>
                 <div class="Doctorat">
                     <div class="espas">
-                        <p> Arabe : langue maternelle </p>
-                        <p> Français : niveau avancé </p>
-                        <p> Anglais et Espagnol : niveau moyen</p>
+                        <p data-i18n-key="languageSkills.ar"></p>
+                        <p data-i18n-key="languageSkills.fr"></p>
+                        <p data-i18n-key="languageSkills.en"></p>
                     </div>
-
                 </div>
-
             </div>
-           
         </section>
-
     </main>
-
-
-
-
-
-
-
-
+    <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
